@@ -49,7 +49,15 @@ test.describe( 'Editor: Media Upload (' + screenSize + ')', function() {
 				} );
 
 				test.it( 'Can upload an image', function() {
-					editorPage.uploadMediaAndInsert( fileDetails );
+					editorPage.uploadMedia( fileDetails );
+				} );
+
+				test.it( 'Can delete image', function() {
+					editorPage.deleteMedia();
+				} );
+
+				test.it( 'Can dismiss media modal', function() {
+					editorPage.dismissMediaModal();
 				} );
 
 				test.after( function() {
@@ -70,7 +78,15 @@ test.describe( 'Editor: Media Upload (' + screenSize + ')', function() {
 				} );
 
 				test.it( 'Can upload an image', function() {
-					editorPage.uploadMediaAndInsert( fileDetails );
+					editorPage.uploadMedia( fileDetails );
+				} );
+
+				test.it( 'Can delete image', function() {
+					editorPage.deleteMedia();
+				} );
+
+				test.it( 'Can dismiss media modal', function() {
+					editorPage.dismissMediaModal();
 				} );
 
 				test.after( function() {
@@ -90,7 +106,15 @@ test.describe( 'Editor: Media Upload (' + screenSize + ')', function() {
 				} );
 
 				test.it( 'Can upload an mp3', function() {
-					editorPage.uploadMediaAndInsert( fileDetails );
+					editorPage.uploadMedia( fileDetails );
+				} );
+
+				test.it( 'Can delete mp3', function() {
+					editorPage.deleteMedia();
+				} );
+
+				test.it( 'Can dismiss media modal', function() {
+					editorPage.dismissMediaModal();
 				} );
 
 				test.after( function() {
