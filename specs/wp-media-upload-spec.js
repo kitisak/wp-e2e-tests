@@ -49,8 +49,7 @@ test.describe( 'Editor: Media Upload (' + screenSize + ')', function() {
 				} );
 
 				test.it( 'Can upload an image', function() {
-					editorPage.enterPostImage( fileDetails );
-					editorPage.waitUntilImageInserted( fileDetails );
+					editorPage.uploadMediaAndInsert( fileDetails );
 				} );
 
 				test.after( function() {
@@ -71,8 +70,7 @@ test.describe( 'Editor: Media Upload (' + screenSize + ')', function() {
 				} );
 
 				test.it( 'Can upload an image', function() {
-					editorPage.enterPostImage( fileDetails );
-					editorPage.waitUntilImageInserted( fileDetails );
+					editorPage.uploadMediaAndInsert( fileDetails );
 				} );
 
 				test.after( function() {
@@ -82,7 +80,7 @@ test.describe( 'Editor: Media Upload (' + screenSize + ')', function() {
 				} );
 			} );
 
-			test.describe( 'Can upload a mp3', function() {
+			test.describe( 'Can upload an mp3', function() {
 				let fileDetails;
 
 				test.before( 'Create mp3 for upload', function() {
@@ -92,8 +90,7 @@ test.describe( 'Editor: Media Upload (' + screenSize + ')', function() {
 				} );
 
 				test.it( 'Can upload an mp3', function() {
-					editorPage.enterPostImage( fileDetails );
-					editorPage.waitUntilImageInserted( fileDetails );
+					editorPage.uploadMediaAndInsert( fileDetails );
 				} );
 
 				test.after( function() {
