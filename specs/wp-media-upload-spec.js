@@ -72,7 +72,7 @@ test.describe( 'Editor: Media Upload (' + screenSize + ')', function() {
 				let fileDetails;
 
 				test.before( 'Create image file for upload', function() {
-					mediaHelper.createFileWithFilename( 'filewith#?#?reservedurlchars.jpg' ).then( function( details ) {
+					mediaHelper.createFileWithFilename( 'filewith#?#?reservedurlchars.jpg', true ).then( function( details ) {
 						fileDetails = details;
 					} );
 				} );
