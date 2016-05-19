@@ -56,11 +56,8 @@ test.describe( 'Editor: Media Upload (' + screenSize + ')', function() {
 					editorPage.deleteMedia();
 				} );
 
-				test.it( 'Can dismiss media modal', function() {
-					editorPage.dismissMediaModal();
-				} );
-
 				test.after( function() {
+					editorPage.dismissMediaModal();
 					if ( fileDetails ) {
 						mediaHelper.deleteFile( fileDetails ).then( function() {} );
 					}
@@ -85,11 +82,8 @@ test.describe( 'Editor: Media Upload (' + screenSize + ')', function() {
 					editorPage.deleteMedia();
 				} );
 
-				test.it( 'Can dismiss media modal', function() {
-					editorPage.dismissMediaModal();
-				} );
-
 				test.after( function() {
+					editorPage.dismissMediaModal();
 					if ( fileDetails ) {
 						mediaHelper.deleteFile( fileDetails ).then( function() {} );
 					}
@@ -113,11 +107,8 @@ test.describe( 'Editor: Media Upload (' + screenSize + ')', function() {
 					editorPage.deleteMedia();
 				} );
 
-				test.it( 'Can dismiss media modal', function() {
-					editorPage.dismissMediaModal();
-				} );
-
 				test.after( function() {
+					editorPage.dismissMediaModal();
 					if ( fileDetails ) {
 						mediaHelper.deleteFile( fileDetails ).then( function() {} );
 					}
